@@ -38,6 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # For using bootstrap styling w/ sass
 gem 'bootstrap-sass'
 
+# User auth
+gem "devise"
+
 # Forms on the fly
 gem 'simple_form'
 
