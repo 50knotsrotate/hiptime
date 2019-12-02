@@ -1,3 +1,6 @@
 <h1><%= @item.title %></h1>
 <p class = 'lead'><%= @item.description %></p>
-<button class = 'btn btn-lg'><%= link_to "Edit", edit_item_path %></button>
+<span>
+<button class = 'btn btn-lg'><%= link_to "Edit", edit_item_path(@item) %></button>
+<button class = 'btn btn-lg bg-danger'><%= link_to "Delete", item_path(@item), method: :delete, data: {confirm: "Ya sure?"} %></button>
+</span>
