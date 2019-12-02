@@ -1,0 +1,6 @@
+<% @items.each do |item|%>
+   <h1> <%= link_to item.title, item%></h1>
+   <p class = 'lead'><%= item.description %></p>
+<% end %>
+
+<button class = 'btn btn-lg'><%= link_to "New Todo", new_item_path %></button>
