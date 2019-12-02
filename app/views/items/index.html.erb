@@ -1,4 +1,8 @@
-<% @items.each do |item|%>
-   <h1> <%= link_to item.title, item%></h1>
-   <p class = 'lead'><%= item.description %></p>
+<% if user_signed_in? %>
+    <% @items.each do |item|%>
+    <h1> <%= link_to item.title, item%></h1>
+    <p class = 'lead'><%= item.description %></p>
+    <% end %>
+<% else %>
+    <%= render 'welcome_page' %>
 <% end %>
